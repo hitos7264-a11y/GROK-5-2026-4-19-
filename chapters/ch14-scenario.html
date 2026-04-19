@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b3a1f">
+<title>第13章：リリース・シナリオの大予想 | GROK 5 大予想</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app">
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">
+    <span class="site-logo-mark">G5</span>
+    <span class="site-logo-text">GROK 5 大予想<small>2026.04.19 / 検証版</small></span>
+  </a>
+  <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-header">
+    <h3 class="drawer-title"><i class="fa-solid fa-compass" style="margin-right:6px;color:var(--accent-amber);"></i> 目次ナビゲーション</h3>
+    <button class="drawer-close" id="drawerClose">×</button>
+  </div>
+  <nav class="drawer-nav">
+    <p class="drawer-section-label"><i class="fa-solid fa-house"></i> ホーム</p>
+    <a href="../index.html" class="drawer-link"><span class="ch-num">TOP</span>トップページ</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-book-open"></i> 本編 14章</p>
+    <a href="ch01-prologue.html" class="drawer-link"><span class="ch-num">序</span>プロローグ：Memphisの夜</a>
+    <a href="ch02-delay.html" class="drawer-link"><span class="ch-num">第1章</span>リリース延期のドラマ</a>
+    <a href="ch03-colossus.html" class="drawer-link"><span class="ch-num">第2章</span>Colossus 2という怪物</a>
+    <a href="ch04-moe.html" class="drawer-link"><span class="ch-num">第3章</span>6兆パラメータとMoE</a>
+    <a href="ch05-multimodal.html" class="drawer-link"><span class="ch-num">第4章</span>マルチモーダル革命</a>
+    <a href="ch06-agents.html" class="drawer-link"><span class="ch-num">第5章</span>16エージェント</a>
+    <a href="ch07-context.html" class="drawer-link"><span class="ch-num">第6章</span>200万トークン</a>
+    <a href="ch08-agi.html" class="drawer-link"><span class="ch-num">第7章</span>AGI 10%の賭け</a>
+    <a href="ch09-benchmark.html" class="drawer-link"><span class="ch-num">第8章</span>競合比較</a>
+    <a href="ch10-price.html" class="drawer-link"><span class="ch-num">第9章</span>料金体系の予想</a>
+    <a href="ch11-ecosystem.html" class="drawer-link"><span class="ch-num">第10章</span>Musk帝国のエコシステム</a>
+    <a href="ch12-yamato.html" class="drawer-link"><span class="ch-num">第11章</span>戦艦大和批判</a>
+    <a href="ch13-ethics.html" class="drawer-link"><span class="ch-num">第12章</span>倫理・権力集中</a>
+    <a href="ch14-scenario.html" class="drawer-link"><span class="ch-num">第13章</span>リリース・シナリオ</a>
+    <a href="ch15-conclusion.html" class="drawer-link"><span class="ch-num">第14章</span>結論</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-magnifying-glass-chart"></i> 検証・訂正</p>
+    <a href="../corrections.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-pen-to-square"></i></span>訂正レポート（17項目）</a>
+    <a href="../verified.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-circle-check"></i></span>検証OK項目</a>
+    <a href="../sources.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-link"></i></span>出典一覧</a>
+  </nav>
+  <div class="drawer-footer">© 2026 GROK5 大予想 検証版</div>
+</aside>
+
+<main>
+
+  <div class="chapter-header">
+    <span class="ch-eyebrow">CHAPTER 13 / 第13章</span>
+    <h1>リリース・シナリオの大予想<br>4月19日以降、何が起きるか</h1>
+    <p class="ch-lead">確率付きの3つの主要シナリオと、10%のテール・リスク。最も有力なのはシナリオA（5月下旬〜6月中旬のパブリック・ベータ）。</p>
+  </div>
+
+  <div class="prose">
+
+    <p>以上の情報を踏まえ、本稿の核心である<strong>「Grok 5リリースの大予想」</strong>を立ててみよう。確率付きで三つの主要シナリオを提示する。</p>
+
+    <div class="scenario">
+      <div class="scenario-header">
+        <div class="scenario-name">シナリオA：Q2リリース</div>
+        <div class="scenario-prob">40<small>%</small></div>
+      </div>
+      <div class="scenario-prob-bar"><div class="fill" style="width:40%"></div></div>
+      <div class="scenario-text">
+        <strong>2026年5月下旬〜6月中旬のパブリック・ベータ</strong><br><br>
+        これがもっとも可能性の高いシナリオだ。Colossus 2の1.5GWへの拡張が4月中に完了し、6兆パラメータMoEの事前訓練とRLHFが5月初旬までに終わる。5月下旬、xAIはX Premium+会員向けにGrok 5のクローズド・ベータを開始し、6月中にSuperGrok会員、そして6月末〜7月初旬に一般公開される。<br><br>
+        マスクはこれを<em>「最大のデモ日」</em>として大々的に発表し、Digital Optimusの実機デモ、Grok 5によるライブ動画解析、16エージェント・システムのリアルタイム稼働などを披露する。<br><br>
+        初期の公開ベンチマークではGrok 5はARC-AGI-2で70％前後、SWE-benchで83％前後、非ハルシネーション率は88％近傍を記録し、総合的にはClaude Opus 4.6・Gemini 3.1 Pro・GPT-5.4と「ほぼ互角、一部項目で先行」という評価を得る。AGIに到達したという宣言は控えめに抑制され、マスクは<strong>「10％、まだ上昇中」</strong>という言い回しを維持する。
+      </div>
+    </div>
+
+    <div class="scenario">
+      <div class="scenario-header">
+        <div class="scenario-name">シナリオB：Q3延期</div>
+        <div class="scenario-prob">30<small>%</small></div>
+      </div>
+      <div class="scenario-prob-bar"><div class="fill" style="width:30%"></div></div>
+      <div class="scenario-text">
+        <strong>Q3 2026への追加延期</strong><br><br>
+        Colossus 2のSpectrum-Xイーサネットで訓練中に想定以上のネットワーク輻輳が発生し、あるいは大規模RLHFで想定より長い収束時間が必要となり、訓練完了が6月〜7月にずれ込むシナリオ。<br><br>
+        この場合、パブリック・ベータは8月以降となり、xAIは「Grok 4.4」「Grok 4.5」といった中間世代を投入して市場のアテンションを保ちながら、Grok 5本体の完成度を磨く。マスクはXで<em>「Grok 5は予定通り進んでいるが、crushingly goodにするためにもう少し時間が必要」</em>という典型的な言い回しでコミュニティを鎮める。
+      </div>
+    </div>
+
+    <div class="scenario">
+      <div class="scenario-header">
+        <div class="scenario-name">シナリオC：ブランド再編</div>
+        <div class="scenario-prob">20<small>%</small></div>
+      </div>
+      <div class="scenario-prob-bar"><div class="fill" style="width:20%"></div></div>
+      <div class="scenario-text">
+        <strong>ブランド再編と段階的リリース</strong><br><br>
+        Grok 5の機能が、一度に全部ロンチされるのではなく、<em>「Grok 4.5」「Grok 4.7」</em>といった名前で段階的に市場に出るシナリオ。マスクは「Grok 5」というブランドを、16エージェント・システム、200万トークン文脈窓、Digital Optimus統合などの全機能が揃った瞬間の<strong>「フル・リリース」</strong>まで温存する。<br><br>
+        この場合、世間的には「Grok 5のリリース」は2026年末〜2027年初頭にずれ込むが、実質的な能力向上はそれ以前に漸進的に提供される。
+      </div>
+    </div>
+
+    <div class="scenario" style="border-color:var(--brown-light); background:linear-gradient(180deg,#fdf3e8,#fef9f0);">
+      <div class="scenario-header">
+        <div class="scenario-name">テール・リスク</div>
+        <div class="scenario-prob">10<small>%</small></div>
+      </div>
+      <div class="scenario-prob-bar"><div class="fill" style="width:10%"></div></div>
+      <div class="scenario-text">
+        <strong>破壊的サプライズ</strong>──たとえば、4月後半に突然<em>「Grok 5 Preview」</em>が全X Premium+会員に公開される、あるいは逆に<em>重大なセーフティ問題が発覚してリリースが年末まで延期される</em>、といったテール・リスクに充てておくべきだろう。
+      </div>
+    </div>
+
+    <h2>シナリオの読み方</h2>
+
+    <p>これらの確率は、2026年4月19日時点で入手できる情報に基づくものだ。特に注意すべきは、<strong>Colossus 2が本当に1.5GWに拡張されるタイミング</strong>と、<strong>Spectrum-Xでの訓練が輻輳なく完了できるか</strong>という2点で、これが遅れればシナリオBが、予定通りならシナリオAが現実味を増す。</p>
+
+    <p>Polymarketの「6月30日までに一般公開」の確率が33％前後であることを踏まえると、<em>市場は私たちの予想よりやや保守的</em>である。</p>
+
+    <div class="info-card">
+      <h4><i class="fa-solid fa-chart-pie"></i> シナリオ確率の合計</h4>
+      <div class="info-grid">
+        <div class="info-row"><span class="k">A：Q2リリース</span><span class="v">40%</span></div>
+        <div class="info-row"><span class="k">B：Q3延期</span><span class="v">30%</span></div>
+        <div class="info-row"><span class="k">C：ブランド再編</span><span class="v">20%</span></div>
+        <div class="info-row"><span class="k">テール・リスク</span><span class="v">10%</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <nav class="nav-prev-next">
+    <a href="ch13-ethics.html" class="nav-pn-btn">
+      <span class="pn-label">← PREV</span>
+      <span class="pn-title">第12章：倫理</span>
+    </a>
+    <a href="ch15-conclusion.html" class="nav-pn-btn next">
+      <span class="pn-label">NEXT →</span>
+      <span class="pn-title">第14章：結論</span>
+    </a>
+  </nav>
+  <a href="../index.html" class="back-to-toc"><i class="fa-solid fa-list"></i> 目次に戻る</a>
+
+</main>
+
+<footer class="site-footer">
+  <h4>GROK 5 大予想 ─ 2026年4月19日</h4>
+  <p>訂正情報を反映した検証版。</p>
+  <div class="footer-meta">© 2026 GROK5 大予想・検証版</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

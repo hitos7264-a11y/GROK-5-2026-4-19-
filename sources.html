@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b3a1f">
+<title>出典一覧 | GROK 5 大予想</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+<header class="site-header">
+  <a href="index.html" class="site-logo">
+    <span class="site-logo-mark">G5</span>
+    <span class="site-logo-text">GROK 5 大予想<small>2026.04.19 / 検証版</small></span>
+  </a>
+  <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-header">
+    <h3 class="drawer-title"><i class="fa-solid fa-compass" style="margin-right:6px;color:var(--accent-amber);"></i> 目次ナビゲーション</h3>
+    <button class="drawer-close" id="drawerClose">×</button>
+  </div>
+  <nav class="drawer-nav">
+    <p class="drawer-section-label"><i class="fa-solid fa-house"></i> ホーム</p>
+    <a href="index.html" class="drawer-link"><span class="ch-num">TOP</span>トップページ</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-book-open"></i> 本編 14章</p>
+    <a href="chapters/ch01-prologue.html" class="drawer-link"><span class="ch-num">序</span>プロローグ：Memphisの夜</a>
+    <a href="chapters/ch02-delay.html" class="drawer-link"><span class="ch-num">第1章</span>リリース延期のドラマ</a>
+    <a href="chapters/ch03-colossus.html" class="drawer-link"><span class="ch-num">第2章</span>Colossus 2という怪物</a>
+    <a href="chapters/ch04-moe.html" class="drawer-link"><span class="ch-num">第3章</span>6兆パラメータとMoE</a>
+    <a href="chapters/ch05-multimodal.html" class="drawer-link"><span class="ch-num">第4章</span>マルチモーダル革命</a>
+    <a href="chapters/ch06-agents.html" class="drawer-link"><span class="ch-num">第5章</span>16エージェント</a>
+    <a href="chapters/ch07-context.html" class="drawer-link"><span class="ch-num">第6章</span>200万トークン</a>
+    <a href="chapters/ch08-agi.html" class="drawer-link"><span class="ch-num">第7章</span>AGI 10%の賭け</a>
+    <a href="chapters/ch09-benchmark.html" class="drawer-link"><span class="ch-num">第8章</span>競合比較</a>
+    <a href="chapters/ch10-price.html" class="drawer-link"><span class="ch-num">第9章</span>料金体系の予想</a>
+    <a href="chapters/ch11-ecosystem.html" class="drawer-link"><span class="ch-num">第10章</span>Musk帝国のエコシステム</a>
+    <a href="chapters/ch12-yamato.html" class="drawer-link"><span class="ch-num">第11章</span>戦艦大和批判</a>
+    <a href="chapters/ch13-ethics.html" class="drawer-link"><span class="ch-num">第12章</span>倫理・権力集中</a>
+    <a href="chapters/ch14-scenario.html" class="drawer-link"><span class="ch-num">第13章</span>リリース・シナリオ</a>
+    <a href="chapters/ch15-conclusion.html" class="drawer-link"><span class="ch-num">第14章</span>結論</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-magnifying-glass-chart"></i> 検証・訂正</p>
+    <a href="corrections.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-pen-to-square"></i></span>訂正レポート（17項目）</a>
+    <a href="verified.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-circle-check"></i></span>検証OK項目</a>
+    <a href="sources.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-link"></i></span>出典一覧</a>
+  </nav>
+  <div class="drawer-footer">© 2026 GROK5 大予想 検証版</div>
+</aside>
+
+<main>
+
+  <div class="chapter-header">
+    <span class="ch-eyebrow"><i class="fa-solid fa-link"></i> SOURCES / 出典</span>
+    <h1>出典・参照リンク一覧<br>検証に使用した主要ソース</h1>
+    <p class="ch-lead">このレポートの検証に使用した一次資料・報道・公式docs・ベンチマークの出典を、カテゴリ別に整理。</p>
+  </div>
+
+  <div class="prose">
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-user"></i> xAI公式 / マスク本人発言</h3>
+      <ul class="source-list">
+        <li><span class="src-name">Elon Musk X投稿 2025/10/18（AGI 10%）</span><span class="src-url">https://x.com/elonmusk/status/1979431839824777673</span></li>
+        <li><span class="src-name">Elon Musk X投稿 2026/01/17（Colossus 2稼働）</span><span class="src-url">https://x.com/elonmusk/status/2012500968571637891</span></li>
+        <li><span class="src-name">xAI公式「Colossus: The World's Largest AI Supercomputer」</span><span class="src-url">https://x.ai/colossus</span></li>
+        <li><span class="src-name">xAI公式「Grok 4」</span><span class="src-url">https://x.ai/news/grok-4</span></li>
+        <li><span class="src-name">xAI公式「Grok 4 Fast」</span><span class="src-url">https://x.ai/news/grok-4-fast</span></li>
+        <li><span class="src-name">xAI公式「Grok 4.1」</span><span class="src-url">https://x.ai/news/grok-4-1</span></li>
+        <li><span class="src-name">xAI公式「xAI Raises $20B Series E」</span><span class="src-url">https://x.ai/news/series-e</span></li>
+        <li><span class="src-name">xAI Docs Release Notes</span><span class="src-url">https://docs.x.ai/developers/release-notes</span></li>
+        <li><span class="src-name">xAI Docs Models and Pricing</span><span class="src-url">https://docs.x.ai/developers/models</span></li>
+        <li><span class="src-name">Grok 4 Fast Model Card (PDF)</span><span class="src-url">https://data.x.ai/2025-09-19-grok-4-fast-model-card.pdf</span></li>
+        <li><span class="src-name">Grok 4.1 Model Card (PDF)</span><span class="src-url">https://data.x.ai/2025-11-17-grok-4-1-model-card.pdf</span></li>
+        <li><span class="src-name">Grok.com Release Notes</span><span class="src-url">https://grok.com/release-notes</span></li>
+        <li><span class="src-name">Grokipedia「Grok 5」</span><span class="src-url">https://grokipedia.com/page/Grok_5</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-sack-dollar"></i> 資金調達・評価額</h3>
+      <ul class="source-list">
+        <li><span class="src-name">Reuters「Musk's xAI raises $20 billion」2026/01/06</span><span class="src-url">https://www.reuters.com/business/musks-xai-raises-20-billion-upsized-series-e-funding-round-2026-01-06/</span></li>
+        <li><span class="src-name">CNBC「xAI raises $20 billion」2026/01/06</span><span class="src-url">https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html</span></li>
+        <li><span class="src-name">PitchBook「xAI jumps to 2nd place」</span><span class="src-url">https://pitchbook.com/news/articles/xai-jumps-to-2nd-place-in-ai-model-funding-race-with-20b-series-e</span></li>
+        <li><span class="src-name">Dealroom「$230B valuation」</span><span class="src-url">https://app.dealroom.co/news/note/xai-raises-20b-in-upsized-series-e-at-potential-valuation-above-230b</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-microchip"></i> Colossus / Macrohard</h3>
+      <ul class="source-list">
+        <li><span class="src-name">Wikipedia「Colossus (supercomputer)」</span><span class="src-url">https://en.wikipedia.org/wiki/Colossus_(supercomputer)</span></li>
+        <li><span class="src-name">Tom's Hardware「Colossus fully operational 200,000 GPUs」</span><span class="src-url">https://www.tomshardware.com/tech-industry/artificial-intelligence/musks-colossus-is-fully-operational-with-200-000-gpus-backed-by-tesla-batteries-phase-2-to-consume-300-mw-enough-to-power-300-000-homes</span></li>
+        <li><span class="src-name">Tom's Hardware「Colossus 2 nowhere near 1 GW」</span><span class="src-url">https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musks-xai-colossus-2-is-nowhere-near-1-gigawatt-capacity-satellite-imagery-suggests-despite-claims-site-only-has-350-megawatts-of-cooling-capacity</span></li>
+        <li><span class="src-name">Introl「xAI Colossus Hits 2 GW: 555,000 GPUs」</span><span class="src-url">https://introl.com/blog/xai-colossus-2-gigawatt-expansion-555k-gpus-january-2026</span></li>
+        <li><span class="src-name">HPCwire「Colossus AI Hits 200,000 GPUs」</span><span class="src-url">https://www.hpcwire.com/2025/05/13/colossus-ai-hits-200000-gpus-as-musk-ramps-up-ai-ambitions/</span></li>
+        <li><span class="src-name">Supermicro事例紹介PDF</span><span class="src-url">https://www.supermicro.com/CaseStudies/Success_Story_xAI_Colossus_Cluster.pdf</span></li>
+        <li><span class="src-name">Local Memphis「xAI Macrohard buildout」</span><span class="src-url">https://www.localmemphis.com/article/news/local/xai-macrohard-buildout-colossus-2-site/</span></li>
+        <li><span class="src-name">WREG「What is 'Macrohard'」</span><span class="src-url">https://wreg.com/news/local/xai-memphis/what-is-macrohard-and-why-does-elon-musk-have-it-on-this-memphis-building/</span></li>
+        <li><span class="src-name">Memphis Business Journal「$15M permit」</span><span class="src-url">https://www.bizjournals.com/memphis/news/2026/03/10/xai-office-buildout-macrohard-colossus-2.html</span></li>
+        <li><span class="src-name">Flopper.io「xAI Colossus 2 Memphis Phase 1」</span><span class="src-url">https://flopper.io/datacenter/xai-colossus-2-memphis-phase-1</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-robot"></i> Grok各バージョン／ベンチマーク</h3>
+      <ul class="source-list">
+        <li><span class="src-name">VentureBeat「xAI launches Grok 4.1」</span><span class="src-url">https://venturebeat.com/ai/musks-xai-launches-grok-4-1-with-lower-hallucination-rate-on-the-web-and</span></li>
+        <li><span class="src-name">BetterStack「What Is Grok 4.1」</span><span class="src-url">https://betterstack.com/community/guides/ai/grok-4-1/</span></li>
+        <li><span class="src-name">TechCrunch「Grok 4 + $300 subscription」</span><span class="src-url">https://techcrunch.com/2025/07/09/elon-musks-xai-launches-grok-4-alongside-a-300-monthly-subscription/</span></li>
+        <li><span class="src-name">Artificial Analysis Grok 4.1 Fast vs Grok 4</span><span class="src-url">https://artificialanalysis.ai/models/comparisons/grok-4-1-fast-vs-grok-4</span></li>
+        <li><span class="src-name">Medium「Grok 4.20 agents Harper/Benjamin/Lucas」</span><span class="src-url">https://medium.com/@krupeshraut/grok-4-20-has-4-ai-agents-that-argue-with-each-other-before-answering-you-ad04efef5169</span></li>
+        <li><span class="src-name">NextBigFuture「xAI Launches Grok 4.20」</span><span class="src-url">https://www.nextbigfuture.com/2026/02/xai-launches-grok-4-20-and-it-has-4-ai-agents-collaborating.html</span></li>
+        <li><span class="src-name">Basenor「Grok 4.3 Beta Is Live」</span><span class="src-url">https://www.basenor.com/blogs/news/grok-4-3-beta-is-live-what-to-expect-and-when</span></li>
+        <li><span class="src-name">FelloAI「Grok 5: Release Date & All We Know So Far」</span><span class="src-url">https://felloai.com/all-we-know-so-far-about-grok-5/</span></li>
+        <li><span class="src-name">Overchat「Grok 5: Release Date」</span><span class="src-url">https://overchat.ai/ai-hub/grok-5-release-date</span></li>
+        <li><span class="src-name">nxcode「Grok 5 release date 6T parameters」</span><span class="src-url">https://www.nxcode.io/resources/news/grok-5-release-date-6t-parameters-agi-xai-complete-guide-2026</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-brain"></i> 競合モデル（OpenAI / Anthropic / Google）</h3>
+      <ul class="source-list">
+        <li><span class="src-name">OpenAI「Introducing GPT-5」</span><span class="src-url">https://openai.com/index/introducing-gpt-5/</span></li>
+        <li><span class="src-name">Wikipedia「GPT-5」</span><span class="src-url">https://en.wikipedia.org/wiki/GPT-5</span></li>
+        <li><span class="src-name">Anthropic「Introducing Claude Opus 4.6」</span><span class="src-url">https://www.anthropic.com/news/claude-opus-4-6</span></li>
+        <li><span class="src-name">Anthropic「Introducing Claude Opus 4.5」</span><span class="src-url">https://www.anthropic.com/news/claude-opus-4-5</span></li>
+        <li><span class="src-name">memu.pro「Gemini 3.1 Pro Scores 77% on ARC-AGI-2」</span><span class="src-url">https://memu.pro/blog/gemini-3-1-pro-reasoning-memory</span></li>
+        <li><span class="src-name">Ezekiel Njuguna「Gemini 3 Pro Launched November 18 2025」</span><span class="src-url">https://ezzekielnjuguna.medium.com/gemini-3-pro-has-launched-google-quietly-releases-its-most-powerful-ai-model-yet-november-18-a47fc5db25d4</span></li>
+        <li><span class="src-name">ARC Prize Leaderboard</span><span class="src-url">https://arcprize.org/leaderboard</span></li>
+        <li><span class="src-name">Latent.Space「Gemini 3.1 Pro: 2x 3.0 on ARC-AGI 2」</span><span class="src-url">https://www.latent.space/p/ainews-gemini-31-pro-2x-30-on-arc</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-graduation-cap"></i> Humanity's Last Exam</h3>
+      <ul class="source-list">
+        <li><span class="src-name">HLE公式「agi.safe.ai」</span><span class="src-url">https://agi.safe.ai/</span></li>
+        <li><span class="src-name">Scientific American「Grok 4 Takes on HLE」</span><span class="src-url">https://www.scientificamerican.com/article/elon-musks-new-grok-4-takes-on-humanitys-last-exam-as-the-ai-race-heats-up/</span></li>
+        <li><span class="src-name">Wikipedia「Humanity's Last Exam」</span><span class="src-url">https://en.wikipedia.org/wiki/Humanity's_Last_Exam</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-film"></i> Sora閉鎖関連</h3>
+      <ul class="source-list">
+        <li><span class="src-name">BBC「OpenAI closes Sora and cancels Disney deal」</span><span class="src-url">https://www.bbc.com/news/articles/c3w3e467ewqo</span></li>
+        <li><span class="src-name">Reuters「OpenAI drops AI video tool Sora」</span><span class="src-url">https://www.reuters.com/technology/openai-set-discontinue-sora-video-platform-app-wsj-reports-2026-03-24/</span></li>
+        <li><span class="src-name">OpenAI Help「Sora discontinuation」</span><span class="src-url">https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation</span></li>
+        <li><span class="src-name">TechCrunch「Why OpenAI really shut down Sora」</span><span class="src-url">https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/</span></li>
+        <li><span class="src-name">Variety「OpenAI Shuts Down Sora AI Video」</span><span class="src-url">https://variety.com/2026/digital/news/openai-shutting-down-sora-video-disney-1236698277/</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-person-walking"></i> Optimus / Neuralink</h3>
+      <ul class="source-list">
+        <li><span class="src-name">Business Insider「Inside XAI All-Hands」</span><span class="src-url">https://www.businessinsider.com/xai-all-hands-agi-superintelligence-funding-success-optimus-space</span></li>
+        <li><span class="src-name">Times of India「Musk tells xAI staff AGI could arrive by 2026」</span><span class="src-url">https://timesofindia.indiatimes.com/technology/tech-news/elon-musk-tells-xai-staff-agi-could-arrive-by-2026-says-next-23-years-are-critical/articleshow/126052650.cms</span></li>
+        <li><span class="src-name">Basenor「Tesla Optimus: Biggest Product Ever Made」</span><span class="src-url">https://www.basenor.com/blogs/news/tesla-optimus-biggest-product-ever-made-the-numbers-behind-the-claim</span></li>
+        <li><span class="src-name">247WallSt「Tesla Exec: Shanghai」</span><span class="src-url">https://247wallst.com/investing/2026/04/14/elon-musks-tesla-exec-shanghai-factory-is-the-key-to-unlocking-robot-mass-production/</span></li>
+        <li><span class="src-name">Reuters「Neuralink 21 participants」</span><span class="src-url">https://www.reuters.com/legal/litigation/elon-musks-neuralink-says-it-has-21-participants-enrolled-trials-2026-01-28/</span></li>
+        <li><span class="src-name">STAT News「Neuralink's big vision collides with reality」</span><span class="src-url">https://www.statnews.com/2026/01/05/neuralink-brain-computer-interface-medical-device-vs-transhumanism/</span></li>
+        <li><span class="src-name">TeslaMagz「Optimus V3 hand 22 DoF patent」</span><span class="src-url">https://teslamagz.com/news/tesla-files-patent-for-optimus-v3-hand-with-22-degrees-of-freedom/</span></li>
+        <li><span class="src-name">Teslarati「Optimus V3 hand and arm details」</span><span class="src-url">https://www.teslarati.com/tesla-optimus-v3-hand-arm-details-revealed-new-patents/</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-book"></i> AGI用語史</h3>
+      <ul class="source-list">
+        <li><span class="src-name">Wikipedia「Artificial general intelligence」</span><span class="src-url">https://en.wikipedia.org/wiki/Artificial_general_intelligence</span></li>
+        <li><span class="src-name">Forbes「AGI: A Very Short History」</span><span class="src-url">https://www.forbes.com/sites/gilpress/2024/03/29/artificial-general-intelligence-or-agi-a-very-short-history/</span></li>
+        <li><span class="src-name">Debate US「What is AGI」</span><span class="src-url">https://debateus.org/what-is-artificial-general-intelligence-definitions-from-experts/</span></li>
+      </ul>
+    </div>
+
+    <div class="source-cat">
+      <h3 class="source-cat-title"><i class="fa-solid fa-chart-line"></i> Polymarket（予測市場）</h3>
+      <ul class="source-list">
+        <li><span class="src-name">SakiCast「Grok 5 released by June 30, 2026?」</span><span class="src-url">https://www.sakicast.com/events/grok-5-released-by</span></li>
+        <li><span class="src-name">Polymarket「Grok 5 released by...?」</span><span class="src-url">https://polymarket.com/event/grok-5-released-by/grok-5-released-by-december-31</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <nav class="nav-prev-next">
+    <a href="corrections.html" class="nav-pn-btn">
+      <span class="pn-label">← PREV</span>
+      <span class="pn-title">訂正レポート</span>
+    </a>
+    <a href="verified.html" class="nav-pn-btn next">
+      <span class="pn-label">NEXT →</span>
+      <span class="pn-title">検証OK項目</span>
+    </a>
+  </nav>
+  <a href="index.html" class="back-to-toc"><i class="fa-solid fa-list"></i> 目次に戻る</a>
+
+</main>
+
+<footer class="site-footer">
+  <h4>GROK 5 大予想 ─ 2026年4月19日</h4>
+  <p>訂正情報を反映した検証版。</p>
+  <div class="footer-meta">© 2026 GROK5 大予想・検証版</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

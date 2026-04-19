@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b3a1f">
+<title>訂正レポート 17項目 | GROK 5 大予想</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+<header class="site-header">
+  <a href="index.html" class="site-logo">
+    <span class="site-logo-mark">G5</span>
+    <span class="site-logo-text">GROK 5 大予想<small>2026.04.19 / 検証版</small></span>
+  </a>
+  <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-header">
+    <h3 class="drawer-title"><i class="fa-solid fa-compass" style="margin-right:6px;color:var(--accent-amber);"></i> 目次ナビゲーション</h3>
+    <button class="drawer-close" id="drawerClose">×</button>
+  </div>
+  <nav class="drawer-nav">
+    <p class="drawer-section-label"><i class="fa-solid fa-house"></i> ホーム</p>
+    <a href="index.html" class="drawer-link"><span class="ch-num">TOP</span>トップページ</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-book-open"></i> 本編 14章</p>
+    <a href="chapters/ch01-prologue.html" class="drawer-link"><span class="ch-num">序</span>プロローグ：Memphisの夜</a>
+    <a href="chapters/ch02-delay.html" class="drawer-link"><span class="ch-num">第1章</span>リリース延期のドラマ</a>
+    <a href="chapters/ch03-colossus.html" class="drawer-link"><span class="ch-num">第2章</span>Colossus 2という怪物</a>
+    <a href="chapters/ch04-moe.html" class="drawer-link"><span class="ch-num">第3章</span>6兆パラメータとMoE</a>
+    <a href="chapters/ch05-multimodal.html" class="drawer-link"><span class="ch-num">第4章</span>マルチモーダル革命</a>
+    <a href="chapters/ch06-agents.html" class="drawer-link"><span class="ch-num">第5章</span>16エージェント</a>
+    <a href="chapters/ch07-context.html" class="drawer-link"><span class="ch-num">第6章</span>200万トークン</a>
+    <a href="chapters/ch08-agi.html" class="drawer-link"><span class="ch-num">第7章</span>AGI 10%の賭け</a>
+    <a href="chapters/ch09-benchmark.html" class="drawer-link"><span class="ch-num">第8章</span>競合比較</a>
+    <a href="chapters/ch10-price.html" class="drawer-link"><span class="ch-num">第9章</span>料金体系の予想</a>
+    <a href="chapters/ch11-ecosystem.html" class="drawer-link"><span class="ch-num">第10章</span>Musk帝国のエコシステム</a>
+    <a href="chapters/ch12-yamato.html" class="drawer-link"><span class="ch-num">第11章</span>戦艦大和批判</a>
+    <a href="chapters/ch13-ethics.html" class="drawer-link"><span class="ch-num">第12章</span>倫理・権力集中</a>
+    <a href="chapters/ch14-scenario.html" class="drawer-link"><span class="ch-num">第13章</span>リリース・シナリオ</a>
+    <a href="chapters/ch15-conclusion.html" class="drawer-link"><span class="ch-num">第14章</span>結論</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-magnifying-glass-chart"></i> 検証・訂正</p>
+    <a href="corrections.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-pen-to-square"></i></span>訂正レポート（17項目）</a>
+    <a href="verified.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-circle-check"></i></span>検証OK項目</a>
+    <a href="sources.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-link"></i></span>出典一覧</a>
+  </nav>
+  <div class="drawer-footer">© 2026 GROK5 大予想 検証版</div>
+</aside>
+
+<main>
+
+  <div class="chapter-header">
+    <span class="ch-eyebrow"><i class="fa-solid fa-pen-to-square"></i> CORRECTIONS / 訂正</span>
+    <h1>訂正レポート 17項目<br>誤り・不正確・要訂正の箇所</h1>
+    <p class="ch-lead">元レポート『GROK 5大予想』について、一次資料・公開情報と照合した結果、事実誤認・数値のずれ・誇張・曖昧さがあることが判明した17項目。</p>
+  </div>
+
+  <div class="prose">
+
+    <p>元レポートに対して、公開情報と照合した結果、以下の点について<strong>事実誤認、数値のずれ、誇張、または曖昧さ</strong>があることが判明しました。本サイトの各章では、これらの訂正情報を<em>最優先で反映</em>しています。</p>
+
+    <!-- #1 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">1</div>
+        <div class="correct-item-title">Colossus 2のGPU規模に関する計算の誤り</div>
+      </div>
+      <div class="correct-item-body">
+        本稿は「H100換算100万基超（Colossus 2の550,000基 ＋ Colossus 1の230,000基）」と記述しているが、単純に550,000＋230,000では<strong>780,000基にしかならず</strong>、「100万基超」という主張は数的に整合しない。
+        <div class="swap">
+          <span class="label wrong">誤</span>単純加算で100万基超<br>
+          <span class="label right">正</span>H100換算（Blackwellの性能係数反映）で100万超相当
+        </div>
+        Flopper.ioによればColossus 2 Phase 1の110,000基GB200は「H100換算277,900基」とされており、換算前の物理GPU数と換算後を混同している。
+      </div>
+    </div>
+
+    <!-- #2 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">2</div>
+        <div class="correct-item-title">Colossus 1のGPU数「230,000基」は正しいが文脈的にやや不正確</div>
+      </div>
+      <div class="correct-item-body">
+        Wikipediaおよび関連資料によると、Colossus 1は2025年6月時点で「H100×150,000基＋H200×50,000基＋GB200×30,000基＝計230,000基」。230,000という数字自体は合っているが、一般に広く報じられている<strong>「200,000基（Phase 2完了時点）」と混在する可能性</strong>があるため、注記があるとより正確。
+      </div>
+    </div>
+
+    <!-- #3 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">3</div>
+        <div class="correct-item-title">施設名「MACROHARDRR」は誤記</div>
+      </div>
+      <div class="correct-item-body">
+        <div class="swap">
+          <span class="label wrong">誤</span>MACROHARDRR<br>
+          <span class="label right">正</span>Macrohard
+        </div>
+        末尾の「RR」は存在しない。マスクがColossus 2の3棟目の屋根に掲げた企業ロゴは「Macrohard」で、Microsoftへのパロディ。WREG、The Commercial Appeal、Local Memphis、Bizjournalsなど複数の地元報道すべてで「Macrohard」と表記。
+      </div>
+    </div>
+
+    <!-- #4 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">4</div>
+        <div class="correct-item-title">Tesla Optimusの「2026年に年間100万台生産」は誇張</div>
+      </div>
+      <div class="correct-item-body">
+        本稿は「Optimus生産目標：2026年に年間100万台」と記しているが、これは<strong>「2026年末時点の年間ランレート（生産能力）目標」であり、2026年の実生産台数ではない</strong>。
+        <div class="swap">
+          <span class="label wrong">誤</span>2026年に実生産100万台<br>
+          <span class="label right">正</span>2026年の実生産目標は50,000〜100,000台／年末ランレートで100万台／年を目指す
+        </div>
+        Basenor・247WallStの報道。年間100万台の実生産は早くても2027年以降。
+      </div>
+    </div>
+
+    <!-- #5 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">5</div>
+        <div class="correct-item-title">Neuralinkの「10人以上の患者にインプラント済み」は過小</div>
+      </div>
+      <div class="correct-item-body">
+        <div class="swap">
+          <span class="label wrong">誤</span>10人以上にインプラント<br>
+          <span class="label right">正</span>21人の被験者に埋め込み済み（Reuters, 2026/01/28）
+        </div>
+        StatNewsの2026年1月報道でも「9月時点で12人」。2026年4月時点で「10人以上」は事実だが、実数は<strong>21人</strong>で「10人以上」は大幅に控えめ。
+      </div>
+    </div>
+
+    <!-- #6 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">6</div>
+        <div class="correct-item-title">Grok 4.20のリリース日の扱いが曖昧</div>
+      </div>
+      <div class="correct-item-body">
+        本稿は<strong>「2026年初頭にリリース」</strong>としているが、xAI公式release notesによれば──
+        <div class="swap">
+          <span class="label right">正</span>Grok 4.20およびマルチエージェント版は<strong>2026年1月28日にAPI公開、2月17日に公開ベータ</strong>
+        </div>
+        「初頭」は許容範囲だが、1月末／2月中旬という具体的日付の方が正確。
+      </div>
+    </div>
+
+    <!-- #7 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">7</div>
+        <div class="correct-item-title">「Grok 4 Fast」「Grok 4.1 Fast」への言及欠落</div>
+      </div>
+      <div class="correct-item-body">
+        本稿はGrok 4、4.1、4.20、4.3に言及するが、以下の重要バージョンへの言及が<strong>欠落</strong>している。
+        <ul>
+          <li><strong>Grok 4 Fast</strong>（2025年9月19日リリース）</li>
+          <li><strong>Grok 4.1 Fast</strong>（2025年11月19日リリース、200万トークン文脈窓）</li>
+        </ul>
+        特にGrok 4.1 Fastの2Mトークン・コンテキストは既に実現済みであり、「文脈窓200万トークンはGrok 5予測」という本稿の主張は<strong>やや古い前提</strong>になっている。
+      </div>
+    </div>
+
+    <!-- #8 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">8</div>
+        <div class="correct-item-title">文脈窓比較の前提矛盾</div>
+      </div>
+      <div class="correct-item-body">
+        Grok 4.1通常版は256Kで正しい。ただしartificialanalysis.aiおよびxAI公式docsによれば<strong>Grok 4.20およびGrok 4.1 Fastは200万トークンに既に到達</strong>している。<br>
+        従って本稿の「Gemini 3.1 Pro / GPT-5.4 / Claude Opus 4.6（各100万）」「Grok 5予測150万〜200万」という比較表は、<strong>Grok 4.20自身が既に200万を実現している事実と矛盾する</strong>。
+      </div>
+    </div>
+
+    <!-- #9 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">9</div>
+        <div class="correct-item-title">Gemini 3 Proの推論スコアのズレ</div>
+      </div>
+      <div class="correct-item-body">
+        <div class="swap">
+          <span class="label wrong">誤</span>Gemini 3 Pro ARC-AGI-2 = 32.4%<br>
+          <span class="label right">正</span>Gemini 3 Pro ARC-AGI-2 = 31.1%
+        </div>
+        Google公式発表および複数の独立レビュー（memu.pro、Reddit、Ezekiel Njuguna）による。<br>
+        Gemini 3 Pro（2025/11/18発表）の公式ベンチマークはARC-AGI-2で31.1%、HLEで37.5%、MathArena Apexで23.4%。Project Valis内部試験「Zeitgeist」の45.1%という数値は<strong>未検証リーク</strong>なので、ここで比較対象に「Gemini 3 Proの32.4%」と書くのは出典不明。
+      </div>
+    </div>
+
+    <!-- #10 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">10</div>
+        <div class="correct-item-title">Gemini 3.1 ProのARC-AGI-2「77.1%」は正しいが一面的</div>
+      </div>
+      <div class="correct-item-body">
+        これは完全に正しい（2026年2月19日発表、77.1%）。ただし<strong>Gemini 3.0 Deep Thinkは85%近くを記録</strong>しているという報道もあり、本稿が「Gemini 3.1 Pro 77.1%」を最高値として扱っている点は一面的。Deep Thinkバリアントへの言及があるとより網羅的。
+      </div>
+    </div>
+
+    <!-- #11 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">11</div>
+        <div class="correct-item-title">「Ben Goertzelが『AGI』という用語の提唱者」は不正確</div>
+      </div>
+      <div class="correct-item-body">
+        <div class="swap">
+          <span class="label wrong">誤</span>Ben Goertzel：AGIという用語の提唱者<br>
+          <span class="label right">正</span>1997年 物理学者 Mark Gubrud が初出。Goertzelは<strong>普及者（popularizer）</strong>
+        </div>
+        Wikipediaおよび複数の歴史的資料によれば、「AGI」という用語を最初に使ったのは1997年の物理学者Mark Gubrud。Ben Goertzelは2007年に同名の論文集『Artificial General Intelligence』を編集し用語を普及・再導入した人物。厳密には「coiner（造語者）」ではなく「popularizer（普及者）」。
+      </div>
+    </div>
+
+    <!-- #12 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">12</div>
+        <div class="correct-item-title">「Sora閉鎖の経済的理由」の表現が簡略化されすぎ</div>
+      </div>
+      <div class="correct-item-body">
+        本稿は「OpenAIが動画生成モデルSoraを<strong>経済的理由で</strong>閉鎖」とだけ書いているが、実際は──
+        <ul>
+          <li>OpenAIの公式説明：「ロボティクスなど他の開発に集中するため」</li>
+          <li>WSJ調査：<strong>1日1,500万ドルの損失</strong>を計上する資金食いのアプリで、99%のユーザーが離脱していた</li>
+          <li>Disneyとの<strong>10億ドル契約も同時に解消</strong></li>
+        </ul>
+        BBC・TechCrunch・Varietyの報道による。単なる「経済的理由」以上の<strong>戦略的撤退</strong>。
+      </div>
+    </div>
+
+    <!-- #13 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">13</div>
+        <div class="correct-item-title">Humanity's Last Exam（HLE）への言及欠落</div>
+      </div>
+      <div class="correct-item-body">
+        本稿はベンチマークを論じているが、<strong>HLEスコアの具体的数値</strong>への言及がない。Scientific AmericanおよびHLE公式サイトによれば──
+        <div class="swap">
+          <span class="label right">正</span>
+          Grok 4 HLE = <strong>ツール使用なし 27% / 標準 44.4% / ツール＋マルチエージェント 51%</strong>
+        </div>
+        Grokのベンチマーク史を論じる上で欠かせない数値。
+      </div>
+    </div>
+
+    <!-- #14 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">14</div>
+        <div class="correct-item-title">シリーズEでのxAI評価額への言及欠落</div>
+      </div>
+      <div class="correct-item-body">
+        本稿は資金調達額（200億ドル）と投資家を記載するが、<strong>調達後の企業評価額「約2,300億ドル（$230B）」</strong>に言及していない。CNBC、Reuters、PitchBookがいずれも「$230B valuation」と報じており、マスク帝国の規模を語る上で重要な数値。
+      </div>
+    </div>
+
+    <!-- #15 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">15</div>
+        <div class="correct-item-title">「Grok 4の知識カットオフ」整合性の問題</div>
+      </div>
+      <div class="correct-item-body">
+        本稿の第4章は「知識カットオフ：2025年12月（Grok 4.3 Beta時点）」と正しく記述しているが、<strong>Grok 3およびGrok 4本体の知識カットオフは2024年11月</strong>（xAI公式docs）。Grok 4.3でようやく2025年12月まで拡張された、という事実関係を明記しないと、誤読される可能性がある。
+      </div>
+    </div>
+
+    <!-- #16 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">16</div>
+        <div class="correct-item-title">投資家リストに「Baron Capital Group」を記載</div>
+      </div>
+      <div class="correct-item-body">
+        本稿は投資家として<strong>Baron Capital Group</strong>を含めているが、Reutersの公式発表リストには「Valor Equity Partners、StepStone、Fidelity、Qatar Investment Authority」は明記されているものの、<strong>Baron Capital Groupの公式参加明記は見当たらない</strong>（2025年秋のマスク発言の舞台としてBaron Capitalが言及されているのみ）。投資家として確定事実扱いするのは要注意。
+      </div>
+    </div>
+
+    <!-- #17 -->
+    <div class="correct-item">
+      <div class="correct-item-head">
+        <div class="correct-item-num">17</div>
+        <div class="correct-item-title">「Colossus 2の1ギガワット稼働」について異論あり</div>
+      </div>
+      <div class="correct-item-body">
+        本稿はマスク発言に沿って「2026年1月に1GW稼働」としているが、<strong>Tom's Hardware（2026年2月）の衛星画像分析</strong>によれば、発表時点ではサイトは実際には<strong>350MW程度の冷却能力しかなかった</strong>。Epoch AIは「1GW到達は5月頃」と推定している。<em>マスクの1月発表は楽観的すぎた可能性</em>が高い、という検証報道への言及があるとより公正。
+      </div>
+    </div>
+
+    <h2><i class="fa-solid fa-triangle-exclamation" style="color:var(--accent-amber);"></i> 検証不能／評価保留の項目</h2>
+
+    <p>以下は一次情報ソースが確認できず、本稿内でも「未検証リーク」「予測」と断っているため、<strong>誤りとは言い切れないが要注意</strong>の項目です。</p>
+
+    <ul class="verified-list" style="list-style:none;">
+      <li style="border-left-color:var(--accent-amber);">Grok 5のパラメータ数「6兆（70%スパース、アクティブ1.8兆）」：6Tはマスク発言として報じられているが、<strong>70%スパース性の具体値は公式確認なし</strong>。</li>
+      <li style="border-left-color:var(--accent-amber);">Project Valis / Zeitgeist推論試験45.1%：<strong>完全な未検証リーク</strong>。ARC Prize公式リーダーボードには未登録。</li>
+      <li style="border-left-color:var(--accent-amber);">Grok 4.20の非ハルシネーション率83%：複数メディアで言及されているが<strong>xAI公式モデルカード上の正確な測定条件は未公開</strong>。</li>
+      <li style="border-left-color:var(--accent-amber);">Grok 5の16エージェント構成予測：<strong>公式確認なし、予測値</strong>。</li>
+      <li style="border-left-color:var(--accent-amber);">競合各社のパラメータ数（GPT-5.x 3兆〜5兆、Claude Opus 4.6 2兆台、Gemini 3.1 Pro 2兆台）：いずれも<strong>業界推定</strong>で、OpenAI・Anthropic・Google公式未開示。</li>
+    </ul>
+
+    <style>
+      .verified-list li::before { color: var(--accent-amber) !important; }
+    </style>
+
+  </div>
+
+  <nav class="nav-prev-next">
+    <a href="verified.html" class="nav-pn-btn">
+      <span class="pn-label">← RELATED</span>
+      <span class="pn-title">検証OK項目</span>
+    </a>
+    <a href="sources.html" class="nav-pn-btn next">
+      <span class="pn-label">NEXT →</span>
+      <span class="pn-title">出典一覧</span>
+    </a>
+  </nav>
+  <a href="index.html" class="back-to-toc"><i class="fa-solid fa-list"></i> 目次に戻る</a>
+
+</main>
+
+<footer class="site-footer">
+  <h4>GROK 5 大予想 ─ 2026年4月19日</h4>
+  <p>訂正情報を反映した検証版。</p>
+  <div class="footer-meta">© 2026 GROK5 大予想・検証版</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

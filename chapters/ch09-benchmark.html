@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b3a1f">
+<title>第8章：競合比較 | GROK 5 大予想</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app">
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">
+    <span class="site-logo-mark">G5</span>
+    <span class="site-logo-text">GROK 5 大予想<small>2026.04.19 / 検証版</small></span>
+  </a>
+  <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-header">
+    <h3 class="drawer-title"><i class="fa-solid fa-compass" style="margin-right:6px;color:var(--accent-amber);"></i> 目次ナビゲーション</h3>
+    <button class="drawer-close" id="drawerClose">×</button>
+  </div>
+  <nav class="drawer-nav">
+    <p class="drawer-section-label"><i class="fa-solid fa-house"></i> ホーム</p>
+    <a href="../index.html" class="drawer-link"><span class="ch-num">TOP</span>トップページ</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-book-open"></i> 本編 14章</p>
+    <a href="ch01-prologue.html" class="drawer-link"><span class="ch-num">序</span>プロローグ：Memphisの夜</a>
+    <a href="ch02-delay.html" class="drawer-link"><span class="ch-num">第1章</span>リリース延期のドラマ</a>
+    <a href="ch03-colossus.html" class="drawer-link"><span class="ch-num">第2章</span>Colossus 2という怪物</a>
+    <a href="ch04-moe.html" class="drawer-link"><span class="ch-num">第3章</span>6兆パラメータとMoE</a>
+    <a href="ch05-multimodal.html" class="drawer-link"><span class="ch-num">第4章</span>マルチモーダル革命</a>
+    <a href="ch06-agents.html" class="drawer-link"><span class="ch-num">第5章</span>16エージェント</a>
+    <a href="ch07-context.html" class="drawer-link"><span class="ch-num">第6章</span>200万トークン</a>
+    <a href="ch08-agi.html" class="drawer-link"><span class="ch-num">第7章</span>AGI 10%の賭け</a>
+    <a href="ch09-benchmark.html" class="drawer-link"><span class="ch-num">第8章</span>競合比較</a>
+    <a href="ch10-price.html" class="drawer-link"><span class="ch-num">第9章</span>料金体系の予想</a>
+    <a href="ch11-ecosystem.html" class="drawer-link"><span class="ch-num">第10章</span>Musk帝国のエコシステム</a>
+    <a href="ch12-yamato.html" class="drawer-link"><span class="ch-num">第11章</span>戦艦大和批判</a>
+    <a href="ch13-ethics.html" class="drawer-link"><span class="ch-num">第12章</span>倫理・権力集中</a>
+    <a href="ch14-scenario.html" class="drawer-link"><span class="ch-num">第13章</span>リリース・シナリオ</a>
+    <a href="ch15-conclusion.html" class="drawer-link"><span class="ch-num">第14章</span>結論</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-magnifying-glass-chart"></i> 検証・訂正</p>
+    <a href="../corrections.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-pen-to-square"></i></span>訂正レポート（17項目）</a>
+    <a href="../verified.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-circle-check"></i></span>検証OK項目</a>
+    <a href="../sources.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-link"></i></span>出典一覧</a>
+  </nav>
+  <div class="drawer-footer">© 2026 GROK5 大予想 検証版</div>
+</aside>
+
+<main>
+
+  <div class="chapter-header">
+    <span class="ch-eyebrow">CHAPTER 08 / 第8章</span>
+    <h1>競合比較<br>Grok 4.1の現在地、Grok 5が超えるべき壁</h1>
+    <p class="ch-lead">ARC-AGI-2, SWE-bench, HLE ─ 実測値で見た Grok 4.x の立ち位置と、Grok 5の跳躍ポイント。</p>
+  </div>
+
+  <div class="prose">
+
+    <p>Grok 5がどこへ行くのかを論じるには、その前身であるGrok 4.xが、現時点で競合に対してどのような位置にいるかを冷静に把握する必要がある。2026年4月時点の主要モデルの立ち位置を、ベンチマークごとに整理しよう。</p>
+
+    <h2>ARC-AGI-2：推論の主戦場</h2>
+
+    <p>推論能力の代表的指標である<strong>ARC-AGI-2</strong>（抽象推論の新世代ベンチマーク）では、Grok 4.1が55％前後を記録している。これに対し、Claude Opus 4.6は68.8％、Google Gemini 3.1 Proは<strong>77.1％</strong>を達成しており、Grokの推論能力は明らかにクラス最下位に位置する。</p>
+
+    <p>つまり、Grok 5はここで最低でも15〜22ポイントの飛躍を必要とする。マスクがしきりに「推論モデルとしての根本的改善」を強調しているのは、この劣位を意識しているからだ。</p>
+
+    <div class="benchmark">
+      <h4>ARC-AGI-2スコア（2026/04 時点）</h4>
+      <p class="bm-sub">抽象推論ベンチマーク</p>
+
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 4.1</span><span class="val">約55%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:55%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Gemini 3 Pro</span><span class="val">31.1%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:31.1%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Claude Opus 4.6</span><span class="val">68.8%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:68.8%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Gemini 3.1 Pro</span><span class="val">77.1%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:77.1%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 5（予想）</span><span class="val">約70%?</span></div>
+        <div class="bm-bar"><div class="fill amber" style="width:70%"></div></div>
+      </div>
+    </div>
+
+    <div class="correction-note">
+      <div class="correction-note-header"><i class="fa-solid fa-pen-to-square"></i> 訂正ノート #9, #10：Gemini系スコアの正確化</div>
+      <div class="correction-note-body">
+        ・<strong>Gemini 3 Pro</strong>：ARC-AGI-2は<strong>31.1%</strong>（元レポートの「32.4%」は誤り）<br>
+        ・<strong>Gemini 3.1 Pro</strong>：77.1%（正確、2026/02/19発表）<br>
+        ・<strong>Gemini 3.0 Deep Think</strong>：85%近くを記録という報道あり。「Gemini 3.1 Proの77.1%が最高」と扱うのは一面的。
+      </div>
+    </div>
+
+    <h2>SWE-bench：コーディングは僅差</h2>
+
+    <p>ソフトウェア開発ベンチマーク<strong>SWE-bench</strong>では、Grok 4.1が78％前後、GPT-5.4が80％前後、Claude Opus 4.6が81％前後と、こちらは僅差で追いついている。</p>
+
+    <p>Grok 5 + 16エージェント・システム + Colossus 2上でのRLHF（人間フィードバックによる強化学習）が組み合わさった場合、ここで<strong>逆転する可能性は十分にある</strong>。とくにGrok 4.3から導入された「コンピュータ使用」能力がGrok 5で拡張されれば、SWE-bench Verified系のスコアでトップを奪う可能性もある。</p>
+
+    <div class="benchmark">
+      <h4>SWE-benchスコア</h4>
+      <p class="bm-sub">ソフトウェア工学ベンチマーク</p>
+
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 4.1</span><span class="val">約78%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:78%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">GPT-5.4</span><span class="val">約80%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Claude Opus 4.6</span><span class="val">約81%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:81%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 5（予想）</span><span class="val">約83%?</span></div>
+        <div class="bm-bar"><div class="fill amber" style="width:83%"></div></div>
+      </div>
+    </div>
+
+    <h2>HLE（Humanity's Last Exam）</h2>
+
+    <p>元レポートには言及がなかったが、<strong>Humanity's Last Exam（HLE）</strong>もGrokのベンチマーク史を論じる上で欠かせない指標だ。</p>
+
+    <div class="correction-note">
+      <div class="correction-note-header"><i class="fa-solid fa-pen-to-square"></i> 訂正ノート #13：HLEスコアの追記</div>
+      <div class="correction-note-body">
+        Scientific AmericanおよびHLE公式サイトによれば、<strong>Grok 4のHLEスコア</strong>は──<br>
+        ・<strong>ツール使用なし：27%</strong><br>
+        ・<strong>標準：44.4%</strong><br>
+        ・<strong>ツール＋マルチエージェント：51%</strong><br>
+        元レポートはこの重要ベンチマークに言及していなかったが、AGI評価の文脈で不可欠。
+      </div>
+    </div>
+
+    <div class="benchmark">
+      <h4>Humanity's Last Exam（HLE）</h4>
+      <p class="bm-sub">専門家レベル・最難関ベンチマーク</p>
+
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 4（ツールなし）</span><span class="val">27%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:27%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 4（標準）</span><span class="val">44.4%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:44.4%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 4（ツール＋エージェント）</span><span class="val">51%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:51%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Gemini 3 Pro</span><span class="val">37.5%</span></div>
+        <div class="bm-bar"><div class="fill" style="width:37.5%"></div></div>
+      </div>
+    </div>
+
+    <h2>文脈窓・非ハルシネーション</h2>
+
+    <p>文脈窓の比較は第6章で述べたとおりで、Grok 4.1 Fast/4.20は<strong>既に2Mに到達</strong>しており、Gemini/GPT-5.4/Claudeの1Mを上回っている。</p>
+
+    <p>非ハルシネーション率では、Grok 4.20 Betaがすでに<strong>83％</strong>という、Claude Opus 4.6・Gemini 3.1・GPT-5.4を上回る水準を達成しており、Grok 5はこれをさらに引き上げて90％近傍に到達する可能性がある。これはエンタープライズ採用の決め手になる指標だ。</p>
+
+    <h2>総合評価</h2>
+
+    <p>総合的には、Grok 5は<em>「推論ではキャッチアップ、文脈窓では先行、非ハルシネーションでは首位、マルチモーダル（特に動画）では圧倒、エージェントでは独自優位」</em>という、<strong>バランスが崩れた稀有なモデル</strong>になる──というのが4月時点の最有力シナリオである。</p>
+
+  </div>
+
+  <nav class="nav-prev-next">
+    <a href="ch08-agi.html" class="nav-pn-btn">
+      <span class="pn-label">← PREV</span>
+      <span class="pn-title">第7章：AGI 10%</span>
+    </a>
+    <a href="ch10-price.html" class="nav-pn-btn next">
+      <span class="pn-label">NEXT →</span>
+      <span class="pn-title">第9章：料金体系</span>
+    </a>
+  </nav>
+  <a href="../index.html" class="back-to-toc"><i class="fa-solid fa-list"></i> 目次に戻る</a>
+
+</main>
+
+<footer class="site-footer">
+  <h4>GROK 5 大予想 ─ 2026年4月19日</h4>
+  <p>訂正情報を反映した検証版。</p>
+  <div class="footer-meta">© 2026 GROK5 大予想・検証版</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

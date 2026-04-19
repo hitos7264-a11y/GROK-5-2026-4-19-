@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b3a1f">
+<meta name="description" content="GROK 5大予想 — 2026年4月19日時点の最新情報から読み解く、イーロン・マスクの『AGIへの賭け』の全貌。検証済みの訂正情報を反映した完全版。">
+<title>GROK 5の大予想 | 2026年4月19日</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+<!-- ========= ヘッダー ========= -->
+<header class="site-header">
+  <a href="index.html" class="site-logo">
+    <span class="site-logo-mark">G5</span>
+    <span class="site-logo-text">
+      GROK 5 大予想
+      <small>2026.04.19 / 検証版</small>
+    </span>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="メニューを開く">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</header>
+
+<!-- ========= ドロワーメニュー ========= -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer" aria-label="サイトナビゲーション">
+  <div class="drawer-header">
+    <h3 class="drawer-title"><i class="fa-solid fa-compass" style="margin-right:6px;color:var(--accent-amber);"></i> 目次ナビゲーション</h3>
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
+  </div>
+  <nav class="drawer-nav">
+    <p class="drawer-section-label"><i class="fa-solid fa-house"></i> ホーム</p>
+    <a href="index.html" class="drawer-link"><span class="ch-num">TOP</span>トップページ</a>
+
+    <p class="drawer-section-label"><i class="fa-solid fa-book-open"></i> 本編 14章</p>
+    <a href="chapters/ch01-prologue.html" class="drawer-link"><span class="ch-num">序</span>プロローグ：Memphisの夜</a>
+    <a href="chapters/ch02-delay.html" class="drawer-link"><span class="ch-num">第1章</span>リリース延期のドラマ</a>
+    <a href="chapters/ch03-colossus.html" class="drawer-link"><span class="ch-num">第2章</span>Colossus 2という怪物</a>
+    <a href="chapters/ch04-moe.html" class="drawer-link"><span class="ch-num">第3章</span>6兆パラメータとMoE</a>
+    <a href="chapters/ch05-multimodal.html" class="drawer-link"><span class="ch-num">第4章</span>マルチモーダル革命</a>
+    <a href="chapters/ch06-agents.html" class="drawer-link"><span class="ch-num">第5章</span>16エージェント</a>
+    <a href="chapters/ch07-context.html" class="drawer-link"><span class="ch-num">第6章</span>200万トークン</a>
+    <a href="chapters/ch08-agi.html" class="drawer-link"><span class="ch-num">第7章</span>AGI 10%の賭け</a>
+    <a href="chapters/ch09-benchmark.html" class="drawer-link"><span class="ch-num">第8章</span>競合比較</a>
+    <a href="chapters/ch10-price.html" class="drawer-link"><span class="ch-num">第9章</span>料金体系の予想</a>
+    <a href="chapters/ch11-ecosystem.html" class="drawer-link"><span class="ch-num">第10章</span>Musk帝国のエコシステム</a>
+    <a href="chapters/ch12-yamato.html" class="drawer-link"><span class="ch-num">第11章</span>戦艦大和批判</a>
+    <a href="chapters/ch13-ethics.html" class="drawer-link"><span class="ch-num">第12章</span>倫理・権力集中</a>
+    <a href="chapters/ch14-scenario.html" class="drawer-link"><span class="ch-num">第13章</span>リリース・シナリオ</a>
+    <a href="chapters/ch15-conclusion.html" class="drawer-link"><span class="ch-num">第14章</span>結論</a>
+
+    <p class="drawer-section-label"><i class="fa-solid fa-magnifying-glass-chart"></i> 検証・訂正</p>
+    <a href="corrections.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-pen-to-square"></i></span>訂正レポート（17項目）</a>
+    <a href="verified.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-circle-check"></i></span>検証OK項目</a>
+    <a href="sources.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-link"></i></span>出典一覧</a>
+  </nav>
+  <div class="drawer-footer">
+    © 2026 GROK5 大予想 検証版 <br>
+    Opus 4.7によるレポート + 第三者検証
+  </div>
+</aside>
+
+<!-- ========= メイン ========= -->
+<main>
+
+  <!-- ========= ヒーロー ========= -->
+  <section class="hero">
+    <span class="hero-badge">
+      <span class="dot"></span>
+      2026.04.19 現在の最新情報
+    </span>
+    <h1 class="hero-title">GROK 5<br>大予想</h1>
+    <p class="hero-sub">
+      イーロン・マスクの「AGIへの賭け」の全貌。<br>
+      6兆パラメータ・MoE、1.5GWの計算力、16エージェント、200万トークン文脈窓──<br>
+      最新の一次資料と第三者検証を統合した、<strong>訂正済み完全版</strong>。
+    </p>
+    <div class="hero-meta">
+      <span class="hero-meta-chip"><i class="fa-regular fa-calendar"></i> 2026/04/19</span>
+      <span class="hero-meta-chip"><i class="fa-regular fa-file-lines"></i> 全14章</span>
+      <span class="hero-meta-chip"><i class="fa-solid fa-shield-halved"></i> 検証反映済</span>
+    </div>
+    <a href="#contents" class="hero-cta">
+      目次を見る <i class="fa-solid fa-arrow-down" style="margin-left:6px;"></i>
+    </a>
+  </section>
+
+  <!-- ========= キーナンバー ========= -->
+  <section>
+    <h2 class="section-title">一目でわかる Grok 5</h2>
+    <p class="section-sub">マスクが公言した数字と、第三者検証で整合が取れた中核データ。</p>
+    <div class="key-numbers">
+      <div class="key-number">
+        <span class="num">10<small>%</small></span>
+        <span class="label">AGI到達確率<br>（マスク自己申告・上昇中）</span>
+      </div>
+      <div class="key-number">
+        <span class="num">6<small>兆</small></span>
+        <span class="label">総パラメータ数<br>（MoE・約70%スパース）</span>
+      </div>
+      <div class="key-number">
+        <span class="num">1.5<small>GW</small></span>
+        <span class="label">Colossus 2 電力<br>（2026/04に拡張）</span>
+      </div>
+      <div class="key-number">
+        <span class="num">$20<small>B</small></span>
+        <span class="label">シリーズE調達額<br>（評価額 約$230B）</span>
+      </div>
+      <div class="key-number">
+        <span class="num">550<small>K</small></span>
+        <span class="label">Blackwell GPU<br>（GB200/GB300）</span>
+      </div>
+      <div class="key-number">
+        <span class="num">2<small>M tk</small></span>
+        <span class="label">文脈窓（予想）<br>※4.1 Fastで既に到達</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= 重要告知 ========= -->
+  <section>
+    <div class="correction-note">
+      <div class="correction-note-header">
+        <i class="fa-solid fa-circle-info"></i>
+        このサイトの方針
+      </div>
+      <div class="correction-note-body">
+        本サイトは、元のレポート『GROK 5大予想』と、それに対する<strong>第三者検証（訂正レポート）</strong>を統合し、<strong>後者の訂正情報を最優先</strong>して内容を書き直したものです。各章では該当箇所で訂正ノートを掲示し、正確な数字・表記・出典に差し替えています。
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= 目次 ========= -->
+  <section id="contents">
+    <h2 class="section-title">目次 / Contents</h2>
+    <p class="section-sub">全14章 + 検証セクション。タップで章ページへ。</p>
+
+    <div class="chapter-list">
+
+      <a href="chapters/ch01-prologue.html" class="chapter-card">
+        <div class="ch-no special"><i class="fa-solid fa-play"></i></div>
+        <div class="ch-info">
+          <div class="ch-title">プロローグ：Memphisの夜、1.5GWの轟音</div>
+          <div class="ch-desc">Colossus 2で訓練される次世代モデル、Grok 5の現在地</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch02-delay.html" class="chapter-card">
+        <div class="ch-no">01</div>
+        <div class="ch-info">
+          <div class="ch-title">リリース延期のドラマ</div>
+          <div class="ch-desc">Q1 2026はなぜ過ぎ去ったのか、Polymarketの視線</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch03-colossus.html" class="chapter-card">
+        <div class="ch-no">02</div>
+        <div class="ch-info">
+          <div class="ch-title">Colossus 2という怪物</div>
+          <div class="ch-desc">550K Blackwell、1.5GW、Macrohard、Spectrum-X</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch04-moe.html" class="chapter-card">
+        <div class="ch-no">03</div>
+        <div class="ch-info">
+          <div class="ch-title">6兆パラメータの意味</div>
+          <div class="ch-desc">MoE、70%スパース、知能密度という指標</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch05-multimodal.html" class="chapter-card">
+        <div class="ch-no">04</div>
+        <div class="ch-info">
+          <div class="ch-title">ネイティブ・マルチモーダル革命</div>
+          <div class="ch-desc">文字、画像、音声、そして動画──AGIへの鍵</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch06-agents.html" class="chapter-card">
+        <div class="ch-no">05</div>
+        <div class="ch-info">
+          <div class="ch-title">マルチ・エージェント進化</div>
+          <div class="ch-desc">4エージェント（Grok/Harper/Benjamin/Lucas）→16へ</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch07-context.html" class="chapter-card">
+        <div class="ch-no">06</div>
+        <div class="ch-info">
+          <div class="ch-title">文脈窓 200万トークン</div>
+          <div class="ch-desc">「記憶の量」という戦場。4.1 Fastで既に到達済</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch08-agi.html" class="chapter-card">
+        <div class="ch-no">07</div>
+        <div class="ch-info">
+          <div class="ch-title">AGIの10% ─ マスクの賭け</div>
+          <div class="ch-desc">2025年10月18日のXポスト、Project Valisの噂</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch09-benchmark.html" class="chapter-card">
+        <div class="ch-no">08</div>
+        <div class="ch-info">
+          <div class="ch-title">競合比較とGrok 4.1の現在地</div>
+          <div class="ch-desc">ARC-AGI-2, SWE-bench, HLE の実測値で比較</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch10-price.html" class="chapter-card">
+        <div class="ch-no">09</div>
+        <div class="ch-info">
+          <div class="ch-title">料金体系の予想</div>
+          <div class="ch-desc">$16 / $30 / $300の三層構造、Heavyの行方</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch11-ecosystem.html" class="chapter-card">
+        <div class="ch-no">10</div>
+        <div class="ch-info">
+          <div class="ch-title">Musk帝国のエコシステム統合</div>
+          <div class="ch-desc">Digital Optimus、Macrohard、Neuralink（被験者21人）</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch12-yamato.html" class="chapter-card">
+        <div class="ch-no">11</div>
+        <div class="ch-info">
+          <div class="ch-title">「AI界の戦艦大和」批判</div>
+          <div class="ch-desc">スケーリング則の黄昏、R&D World誌の警告</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch13-ethics.html" class="chapter-card">
+        <div class="ch-no">12</div>
+        <div class="ch-info">
+          <div class="ch-title">倫理、プライバシー、権力集中</div>
+          <div class="ch-desc">6兆パラメータの影、監視社会と民主主義</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch14-scenario.html" class="chapter-card">
+        <div class="ch-no">13</div>
+        <div class="ch-info">
+          <div class="ch-title">リリース・シナリオ大予想</div>
+          <div class="ch-desc">A(40%)/B(30%)/C(20%)/テールリスク(10%)</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+      <a href="chapters/ch15-conclusion.html" class="chapter-card">
+        <div class="ch-no">14</div>
+        <div class="ch-info">
+          <div class="ch-title">結論 ─ 6兆パラメータの賭けの先</div>
+          <div class="ch-desc">戦艦大和か、AGI第一歩か。分水嶺に立つ私たち</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ========= 検証ショートカット ========= -->
+  <section>
+    <h2 class="section-title">検証セクション</h2>
+    <p class="section-sub">元レポートの内容を一次資料と突き合わせた検証結果。</p>
+
+    <div class="chapter-list">
+      <a href="corrections.html" class="chapter-card">
+        <div class="ch-no special"><i class="fa-solid fa-pen-to-square"></i></div>
+        <div class="ch-info">
+          <div class="ch-title">訂正レポート（17項目）</div>
+          <div class="ch-desc">事実誤認・数値のずれ・誇張・表記揺れを逐一特定</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+      <a href="verified.html" class="chapter-card">
+        <div class="ch-no special" style="background:linear-gradient(135deg,#8ca870,#6b8e4e);">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="ch-info">
+          <div class="ch-title">検証OK項目</div>
+          <div class="ch-desc">一次資料と整合が取れた主要項目のリスト</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+      <a href="sources.html" class="chapter-card">
+        <div class="ch-no special" style="background:linear-gradient(135deg,#7a6555,#4a3829);">
+          <i class="fa-solid fa-link"></i>
+        </div>
+        <div class="ch-info">
+          <div class="ch-title">出典 / 参照リンク一覧</div>
+          <div class="ch-desc">検証に使用した一次ソース（xAI公式、Reuters他）</div>
+        </div>
+        <div class="ch-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========= 著者ノート ========= -->
+  <section>
+    <h2 class="section-title">著者ノート</h2>
+    <div class="info-card">
+      <h4><i class="fa-solid fa-feather-pointed"></i> このレポートについて</h4>
+      <p style="font-size:13px; line-height:1.85; color:var(--text-soft); margin:0;">
+        本稿は、2026年4月19日時点で入手できるあらゆる一次情報・二次情報・リーク情報を統合し、「Grok 5とは結局どんなモデルになるのか」「いつ出るのか」「何ができるのか」「価格はいくらか」「AGIに到達するのか、それとも『AI界の戦艦大和』になるのか」──これらの問いに対して、冷静かつ熱のこもった長文で総括を試みたものです。<br><br>
+        元レポートはOpus4.7（2026年4月19日作成）をベースに、第三者検証で指摘された17項目の訂正を反映しています。
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========= フッター ========= -->
+<footer class="site-footer">
+  <h4>GROK 5 大予想 ─ 2026年4月19日</h4>
+  <p>
+    本サイトの情報は2026年4月19日時点のもので、公式発表・リーク・予測・第三者検証の組み合わせです。<br>
+    xAI公式の未発表事項については、確定情報ではないことにご留意ください。
+  </p>
+  <div class="footer-meta">
+    © 2026 GROK5 大予想・検証版 / Opus4.7 Base + 第三者検証統合
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="トップへ戻る">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+</div><!-- /.app -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

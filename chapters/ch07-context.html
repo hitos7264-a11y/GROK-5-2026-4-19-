@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b3a1f">
+<title>第6章：文脈窓200万トークン | GROK 5 大予想</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app">
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">
+    <span class="site-logo-mark">G5</span>
+    <span class="site-logo-text">GROK 5 大予想<small>2026.04.19 / 検証版</small></span>
+  </a>
+  <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-header">
+    <h3 class="drawer-title"><i class="fa-solid fa-compass" style="margin-right:6px;color:var(--accent-amber);"></i> 目次ナビゲーション</h3>
+    <button class="drawer-close" id="drawerClose">×</button>
+  </div>
+  <nav class="drawer-nav">
+    <p class="drawer-section-label"><i class="fa-solid fa-house"></i> ホーム</p>
+    <a href="../index.html" class="drawer-link"><span class="ch-num">TOP</span>トップページ</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-book-open"></i> 本編 14章</p>
+    <a href="ch01-prologue.html" class="drawer-link"><span class="ch-num">序</span>プロローグ：Memphisの夜</a>
+    <a href="ch02-delay.html" class="drawer-link"><span class="ch-num">第1章</span>リリース延期のドラマ</a>
+    <a href="ch03-colossus.html" class="drawer-link"><span class="ch-num">第2章</span>Colossus 2という怪物</a>
+    <a href="ch04-moe.html" class="drawer-link"><span class="ch-num">第3章</span>6兆パラメータとMoE</a>
+    <a href="ch05-multimodal.html" class="drawer-link"><span class="ch-num">第4章</span>マルチモーダル革命</a>
+    <a href="ch06-agents.html" class="drawer-link"><span class="ch-num">第5章</span>16エージェント</a>
+    <a href="ch07-context.html" class="drawer-link"><span class="ch-num">第6章</span>200万トークン</a>
+    <a href="ch08-agi.html" class="drawer-link"><span class="ch-num">第7章</span>AGI 10%の賭け</a>
+    <a href="ch09-benchmark.html" class="drawer-link"><span class="ch-num">第8章</span>競合比較</a>
+    <a href="ch10-price.html" class="drawer-link"><span class="ch-num">第9章</span>料金体系の予想</a>
+    <a href="ch11-ecosystem.html" class="drawer-link"><span class="ch-num">第10章</span>Musk帝国のエコシステム</a>
+    <a href="ch12-yamato.html" class="drawer-link"><span class="ch-num">第11章</span>戦艦大和批判</a>
+    <a href="ch13-ethics.html" class="drawer-link"><span class="ch-num">第12章</span>倫理・権力集中</a>
+    <a href="ch14-scenario.html" class="drawer-link"><span class="ch-num">第13章</span>リリース・シナリオ</a>
+    <a href="ch15-conclusion.html" class="drawer-link"><span class="ch-num">第14章</span>結論</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-magnifying-glass-chart"></i> 検証・訂正</p>
+    <a href="../corrections.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-pen-to-square"></i></span>訂正レポート（17項目）</a>
+    <a href="../verified.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-circle-check"></i></span>検証OK項目</a>
+    <a href="../sources.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-link"></i></span>出典一覧</a>
+  </nav>
+  <div class="drawer-footer">© 2026 GROK5 大予想 検証版</div>
+</aside>
+
+<main>
+
+  <div class="chapter-header">
+    <span class="ch-eyebrow">CHAPTER 06 / 第6章</span>
+    <h1>文脈窓200万トークン<br>「記憶の量」という新たな戦場</h1>
+    <p class="ch-lead">200万トークンは書籍20冊分。実は4.1 Fastで既に到達している──元レポートの前提を修正。</p>
+  </div>
+
+  <div class="prose">
+
+    <p>文脈窓サイズは、近年のLLM戦争における主要な差別化ポイントのひとつだ。現行の<strong>Grok 4.1（通常版）は256,000トークン</strong>で、Gemini 3.1 ProやGPT-5.4の100万トークン、Claude Opus 4.6の100万トークンに対して明らかに遅れを取っていた──と、元レポートは論じていた。しかし、この前提はすでに古い。</p>
+
+    <div class="correction-note">
+      <div class="correction-note-header"><i class="fa-solid fa-pen-to-square"></i> 訂正ノート #7, #8：200万トークンは既に実現済</div>
+      <div class="correction-note-body">
+        元レポートは「Grok 4、4.1、4.20、4.3」に言及するが、重要なバージョンが抜けている。<br>
+        ・<strong>Grok 4 Fast</strong>（2025年9月19日リリース）<br>
+        ・<strong>Grok 4.1 Fast</strong>（2025年11月19日リリース）─ <strong>200万トークンコンテキストを既に実装</strong><br>
+        ・Grok 4.20も artificialanalysis.ai と xAI公式docs によれば、<strong>200万トークンに到達済み</strong><br>
+        従って「文脈窓200万トークンはGrok 5の予測」という主張は事実と矛盾する。<strong>Grok 5は既存の2M tokenを「踏襲・拡張」する位置づけ</strong>と見るのが正確。
+      </div>
+    </div>
+
+    <h2>Grok 5での見込み：1.5M〜2M、あるいはそれ以上</h2>
+
+    <p>複数の情報源が伝える数字は、150万トークンから200万トークンの範囲で揺れている。Grokipediaとnxcodeは1.5Mトークンを挙げ、YouTube上の技術解説系チャンネル「Grok 5 Explained: The 2 Million Token AI That Beats GPT-5」は200万トークンを提示している。</p>
+
+    <p>ただし前述の通り、<strong>Grok 4.1 Fast・Grok 4.20が既に2Mに到達している</strong>ため、Grok 5の本当の焦点は、「2Mを超える文脈窓を提供するか」「2Mコンテキスト内で品質劣化なく推論できるか」に移っているとみるのが妥当だ。</p>
+
+    <h2>200万トークンが意味すること</h2>
+
+    <p>200万トークンが何を意味するか。これは、平均的な書籍に換算すると、およそ<strong>20冊分のテキスト</strong>を一度のプロンプトで読み込ませられる規模である。あるいは、中規模のソフトウェア・プロジェクト（数十万行）全体をソースコードのままコンテキストに注入できる。</p>
+
+    <p>法律文書や医療記録の包括的レビュー、大規模コードベースのリファクタリング、長時間動画（数時間分の音声・映像タイムコード付き）の要約など、これまでRAG（Retrieval-Augmented Generation）でしか実現できなかったユースケースが、<strong>直接コンテキストで処理</strong>できるようになる。</p>
+
+    <div class="benchmark">
+      <h4>2026年4月時点の文脈窓比較</h4>
+      <p class="bm-sub">（通常版／単位はトークン）</p>
+
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 4.1（通常版）</span><span class="val">256K</span></div>
+        <div class="bm-bar"><div class="fill" style="width:12.8%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Claude Opus 4.6</span><span class="val">1M</span></div>
+        <div class="bm-bar"><div class="fill" style="width:50%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">GPT-5.4</span><span class="val">1M</span></div>
+        <div class="bm-bar"><div class="fill" style="width:50%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Gemini 3.1 Pro</span><span class="val">1M</span></div>
+        <div class="bm-bar"><div class="fill" style="width:50%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 4.1 Fast / 4.20</span><span class="val">2M（既に実装済）</span></div>
+        <div class="bm-bar"><div class="fill amber" style="width:100%"></div></div>
+      </div>
+      <div class="bm-row">
+        <div class="bm-label"><span class="name">Grok 5（予想）</span><span class="val">2M 以上？</span></div>
+        <div class="bm-bar"><div class="fill amber" style="width:100%"></div></div>
+      </div>
+    </div>
+
+    <h2>三位一体の威力</h2>
+
+    <p>Mixture-of-Expertsによる効率化と、Colossus 2による推論インフラ、そして200万トークンの文脈窓。この<strong>三位一体</strong>が、Grok 5の<em>「エージェント性能」</em>を決定する。</p>
+
+    <p>特に、自律的にウェブを巡回し、Xのリアルタイム・データを参照し、コードを書いて実行する、という数十ステップのタスクでは、エージェントが自分自身の履歴を参照し続けられる<strong>広大な文脈窓が決定的な武器</strong>になる。</p>
+
+  </div>
+
+  <nav class="nav-prev-next">
+    <a href="ch06-agents.html" class="nav-pn-btn">
+      <span class="pn-label">← PREV</span>
+      <span class="pn-title">第5章：16エージェント</span>
+    </a>
+    <a href="ch08-agi.html" class="nav-pn-btn next">
+      <span class="pn-label">NEXT →</span>
+      <span class="pn-title">第7章：AGI 10%</span>
+    </a>
+  </nav>
+  <a href="../index.html" class="back-to-toc"><i class="fa-solid fa-list"></i> 目次に戻る</a>
+
+</main>
+
+<footer class="site-footer">
+  <h4>GROK 5 大予想 ─ 2026年4月19日</h4>
+  <p>訂正情報を反映した検証版。</p>
+  <div class="footer-meta">© 2026 GROK5 大予想・検証版</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

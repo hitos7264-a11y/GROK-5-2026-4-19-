@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#5b3a1f">
+<title>第5章：マルチ・エージェント・システム進化 | GROK 5 大予想</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app">
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">
+    <span class="site-logo-mark">G5</span>
+    <span class="site-logo-text">GROK 5 大予想<small>2026.04.19 / 検証版</small></span>
+  </a>
+  <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-header">
+    <h3 class="drawer-title"><i class="fa-solid fa-compass" style="margin-right:6px;color:var(--accent-amber);"></i> 目次ナビゲーション</h3>
+    <button class="drawer-close" id="drawerClose">×</button>
+  </div>
+  <nav class="drawer-nav">
+    <p class="drawer-section-label"><i class="fa-solid fa-house"></i> ホーム</p>
+    <a href="../index.html" class="drawer-link"><span class="ch-num">TOP</span>トップページ</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-book-open"></i> 本編 14章</p>
+    <a href="ch01-prologue.html" class="drawer-link"><span class="ch-num">序</span>プロローグ：Memphisの夜</a>
+    <a href="ch02-delay.html" class="drawer-link"><span class="ch-num">第1章</span>リリース延期のドラマ</a>
+    <a href="ch03-colossus.html" class="drawer-link"><span class="ch-num">第2章</span>Colossus 2という怪物</a>
+    <a href="ch04-moe.html" class="drawer-link"><span class="ch-num">第3章</span>6兆パラメータとMoE</a>
+    <a href="ch05-multimodal.html" class="drawer-link"><span class="ch-num">第4章</span>マルチモーダル革命</a>
+    <a href="ch06-agents.html" class="drawer-link"><span class="ch-num">第5章</span>16エージェント</a>
+    <a href="ch07-context.html" class="drawer-link"><span class="ch-num">第6章</span>200万トークン</a>
+    <a href="ch08-agi.html" class="drawer-link"><span class="ch-num">第7章</span>AGI 10%の賭け</a>
+    <a href="ch09-benchmark.html" class="drawer-link"><span class="ch-num">第8章</span>競合比較</a>
+    <a href="ch10-price.html" class="drawer-link"><span class="ch-num">第9章</span>料金体系の予想</a>
+    <a href="ch11-ecosystem.html" class="drawer-link"><span class="ch-num">第10章</span>Musk帝国のエコシステム</a>
+    <a href="ch12-yamato.html" class="drawer-link"><span class="ch-num">第11章</span>戦艦大和批判</a>
+    <a href="ch13-ethics.html" class="drawer-link"><span class="ch-num">第12章</span>倫理・権力集中</a>
+    <a href="ch14-scenario.html" class="drawer-link"><span class="ch-num">第13章</span>リリース・シナリオ</a>
+    <a href="ch15-conclusion.html" class="drawer-link"><span class="ch-num">第14章</span>結論</a>
+    <p class="drawer-section-label"><i class="fa-solid fa-magnifying-glass-chart"></i> 検証・訂正</p>
+    <a href="../corrections.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-pen-to-square"></i></span>訂正レポート（17項目）</a>
+    <a href="../verified.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-circle-check"></i></span>検証OK項目</a>
+    <a href="../sources.html" class="drawer-link"><span class="ch-num"><i class="fa-solid fa-link"></i></span>出典一覧</a>
+  </nav>
+  <div class="drawer-footer">© 2026 GROK5 大予想 検証版</div>
+</aside>
+
+<main>
+
+  <div class="chapter-header">
+    <span class="ch-eyebrow">CHAPTER 05 / 第5章</span>
+    <h1>マルチ・エージェント進化<br>4エージェントから16エージェントへ</h1>
+    <p class="ch-lead">Grok, Harper, Benjamin, Lucas ─ 合議制で答えを紡ぐ4つの専門家。Grok 5では16に膨張する。</p>
+  </div>
+
+  <div class="prose">
+
+    <p>Grokの秘密兵器として、長らく軽視されがちだったのが<strong>「マルチエージェント・システム」</strong>だ。Grok 4のHeavyエディションですでに複数エージェントの協調が実装され、<strong>Grok 4.20</strong>（2026年1月28日にAPI公開、2月17日に公開ベータ）では、<strong>「Grok」「Harper」「Benjamin」「Lucas」</strong>という4つの専門化エージェントが並行実行される構成になった。</p>
+
+    <div class="correction-note">
+      <div class="correction-note-header"><i class="fa-solid fa-pen-to-square"></i> 訂正ノート #6：Grok 4.20リリース日の精緻化</div>
+      <div class="correction-note-body">
+        元レポートは「2026年初頭にリリース」という曖昧な表現だった。xAI公式release notesによれば、より正確には──<br>
+        ・<strong>2026年1月28日：API公開</strong><br>
+        ・<strong>2026年2月17日：公開ベータ</strong><br>
+        マルチエージェント版もこの流れで展開された。
+      </div>
+    </div>
+
+    <h2>4つの役割</h2>
+
+    <p>それぞれに、<em>「全体統括」「リサーチ」「論理推論」「反対意見の提示」</em>といった役割が与えられ、合議制で最終回答が練り上げられる。</p>
+
+    <div class="info-card">
+      <h4><i class="fa-solid fa-users-gear"></i> Grok 4.20の4エージェント</h4>
+      <div class="info-grid">
+        <div class="info-row"><span class="k">Grok</span><span class="v">全体統括・統合</span></div>
+        <div class="info-row"><span class="k">Harper</span><span class="v">リサーチ・情報収集</span></div>
+        <div class="info-row"><span class="k">Benjamin</span><span class="v">論理推論・検算</span></div>
+        <div class="info-row"><span class="k">Lucas</span><span class="v">反対意見・批判的視点</span></div>
+      </div>
+    </div>
+
+    <p>この結果、Grok 4.20 Betaの<strong>非ハルシネーション率（事実誤認を含まない応答率）は83％</strong>に達し、Claude Opus 4.6（max推論モード）、Gemini 3.1、GPT-5.4（x-high推論モード）を上回る、とFello AIは指摘している。</p>
+
+    <div class="correction-note">
+      <div class="correction-note-header"><i class="fa-solid fa-circle-info"></i> 検証ノート：83%の数字</div>
+      <div class="correction-note-body">
+        「Grok 4.20の非ハルシネーション率83%」は複数メディアで言及されているが、<strong>xAI公式モデルカード上の正確な測定条件は未公開</strong>。業界観測値として扱うべき。
+      </div>
+    </div>
+
+    <h2>Grok 5：16エージェント＋永続記憶</h2>
+
+    <p>Grok 5では、この構成がさらに大胆にスケールする。複数のリーク情報は、<strong>最大16エージェント以上が並列稼働</strong>する「ダイナミック・エージェント・スポーニング」という仕組みを示唆する。これは、タスクの複雑度に応じてエージェント数を動的に増減させる設計で、単純な質問なら1エージェント、複雑な研究計画なら16エージェントが展開される。</p>
+
+    <p>さらに、セッションを跨いだ<strong>永続的な記憶（persistent memory across agent sessions）</strong>が実装され、前回の対話や作業内容が自動的に引き継がれる。これは、<em>Mixture-of-Experts（モデル内部の専門家分岐）</em>と<em>Mixture-of-Agents（モデル外部のエージェント協調）</em>を、二重に掛け合わせる構造で、従来のLLMとは質的に異なる<strong>「推論計算量のオンデマンド・スケール」</strong>を可能にする。</p>
+
+    <div class="correction-note">
+      <div class="correction-note-header"><i class="fa-solid fa-circle-info"></i> 検証ノート：16エージェントは予測値</div>
+      <div class="correction-note-body">
+        「Grok 5の16エージェント構成」は<strong>公式確認なし、リーク・予測値</strong>。具体的な数は変わる可能性がある。
+      </div>
+    </div>
+
+    <h2>料金への影響</h2>
+
+    <p>料金体系の観点でも、この16エージェント体制は重要である。現行の<strong>「SuperGrok Heavy」プランは、すでに月額300ドルでGrok 4 Heavyへのアクセスを提供している</strong>（Grok 4リリース時・2025年7月9日から）。Grok 5世代ではこれが<strong>「16エージェントHeavy」</strong>に格上げされ、研究者・開発者向けの最高峰オプションとなる公算が強い。</p>
+
+    <p>Heavy層のユーザー体験は、「16人の専門スタッフを並列で雇う」ような感覚になるだろう。単純な質問には即答、難問には合議、長期プロジェクトには記憶の継続──これは、従来のチャットボットとは別のカテゴリの製品である。</p>
+
+  </div>
+
+  <nav class="nav-prev-next">
+    <a href="ch05-multimodal.html" class="nav-pn-btn">
+      <span class="pn-label">← PREV</span>
+      <span class="pn-title">第4章：マルチモーダル</span>
+    </a>
+    <a href="ch07-context.html" class="nav-pn-btn next">
+      <span class="pn-label">NEXT →</span>
+      <span class="pn-title">第6章：200万トークン</span>
+    </a>
+  </nav>
+  <a href="../index.html" class="back-to-toc"><i class="fa-solid fa-list"></i> 目次に戻る</a>
+
+</main>
+
+<footer class="site-footer">
+  <h4>GROK 5 大予想 ─ 2026年4月19日</h4>
+  <p>訂正情報を反映した検証版。</p>
+  <div class="footer-meta">© 2026 GROK5 大予想・検証版</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

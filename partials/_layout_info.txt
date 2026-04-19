@@ -1,0 +1,22 @@
+# サイト構成メモ（開発用）
+
+## ページ一覧
+- index.html                  : トップ（ヒーロー・目次）
+- chapters/ch01-prologue.html : プロローグ
+- chapters/ch02-delay.html    : 第1章 リリース延期
+- chapters/ch03-colossus.html : 第2章 Colossus 2
+- chapters/ch04-moe.html      : 第3章 6兆パラメータMoE
+- chapters/ch05-multimodal.html : 第4章 マルチモーダル
+- chapters/ch06-agents.html   : 第5章 マルチエージェント
+- chapters/ch07-context.html  : 第6章 200万トークン
+- chapters/ch08-agi.html      : 第7章 AGI 10%
+- chapters/ch09-benchmark.html: 第8章 競合比較
+- chapters/ch10-price.html    : 第9章 料金
+- chapters/ch11-ecosystem.html: 第10章 エコシステム
+- chapters/ch12-yamato.html   : 第11章 戦艦大和批判
+- chapters/ch13-ethics.html   : 第12章 倫理
+- chapters/ch14-scenario.html : 第13章 リリース予想
+- chapters/ch15-conclusion.html : 第14章 結論
+- corrections.html            : 訂正レポート（17項目）
+- verified.html               : 検証OK項目
+- sources.html                : 出典一覧
